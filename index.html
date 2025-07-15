@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <input type="text" id="name" placeholder="Enter Name" />
+    <input type="date" id="dob" />
+    <button onclick="generatePassword()">Generate Password</button>
+
+    <div id="output" class="hidden">
+      <h3>Generated Password:</h3>
+      <p id="password"></p>
+
+      <div id="strengthBar">
+        <div id="strength"></div>
+      </div>
+      <p id="strengthLabel"></p>
+
+      <div class="btn-group">
+        <button id="okBtn" class="hidden" onclick="showSuccess()">OK</button>
+        <button id="regenBtn" class="hidden" onclick="generatePassword()">Regenerate</button>
+      </div>
+
+      <p id="successMessage" class="hidden">Password Generated !!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
